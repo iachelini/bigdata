@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Pail
-Bundle-SymbolicName: ch.iachelini.log.pail;singleton:=true
+Bundle-SymbolicName: ch.iachelini.pail;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: ch.iachelini.log.pail.Activator
+Bundle-Activator: ch.iachelini.pail.Activator
 Bundle-Vendor: Gilles Iachelini
 Require-Bundle: system.bundle,
  org.eclipse.core.runtime;bundle-version="3.8.0",

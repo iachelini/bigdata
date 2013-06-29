@@ -1,9 +1,9 @@
-package ch.iachelini.log.pail;
+package ch.iachelini.pail;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import ch.iachelini.log.pail.internal.PailIO;
+import ch.iachelini.pail.internal.PailIO;
 
 public class Activator implements BundleActivator {
 
