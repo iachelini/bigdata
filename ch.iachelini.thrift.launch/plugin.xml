@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="org.apache.thrift.launch.ThriftLaunchDelegate"
+            delegateDescription="Eclipse Thrift Launcher"
+            id="org.apache.thrift.launch.type"
+            modes="run"
+            name="Thrift"
+            public="true"
+            sourceLocatorId="org.eclipse.pde.ui.launcher.PDESourceLookupDirector"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="org.apache.thrift.launch.LaunchConfigurationTabGroup"
+            id="org.apache.thrift.launch.launchConfigurationTabGroup"
+            type="org.apache.thrift.launch.type">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="org.apache.thrift.launch.type"
+            icon="icons/favicon.ico"
+            id="org.apache.thrift.launch.launchConfigurationTypeImage">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            class="org.apache.thrift.launch.LaunchShortcut"
+            icon="icons/favicon.ico"
+            id="org.apache.thrift.launch.shortcut"
+            label="Thrift"
+            modes="run">
+         <contextualLaunch>
+            <enablement>
+               <with
+                     variable="selection">
+                  <count
+                        value="1">
+                  </count>
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.core.resources.IFile">
+                        <test
+                              property="org.eclipse.core.resources.name"
+                              value="*.thrift">
+                        </test>
+                     </adapt>
+                  </iterate>
+               </with>
+            </enablement>
+         </contextualLaunch>
+      </shortcut>
+   </extension>
+
+</plugin>

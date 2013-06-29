@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: slf4
+Bundle-SymbolicName: org.slf4j;singleton:=true
+Bundle-Version: 1.2.14.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: .,
+ lib/slf4j-api-1.5.8.jar,
+ lib/slf4j-log4j12-1.5.8.jar
+Bundle-Vendor: slf
+Export-Package: org.slf4j,
+ org.slf4j.helpers,
+ org.slf4j.impl,
+ org.slf4j.spi
