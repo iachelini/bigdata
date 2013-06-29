@@ -1,4 +1,4 @@
-package ch.iachelini.log.pail.internal;
+package ch.iachelini.pail.internal;
 
 import java.io.IOException;
 
