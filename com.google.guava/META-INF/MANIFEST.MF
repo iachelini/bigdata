@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Guava
-Bundle-SymbolicName: com.google.guava
+Bundle-SymbolicName: com.google.guava;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: GOOGLE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
@@ -20,3 +20,4 @@ Export-Package: com.google.common.annotations,
  com.google.common.primitives,
  com.google.common.reflect,
  com.google.common.util.concurrent
+Bundle-ActivationPolicy: lazy

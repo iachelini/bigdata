@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Jvyaml
-Bundle-SymbolicName: org.jvyaml
+Bundle-SymbolicName: org.jvyaml;singleton:=true
 Bundle-Version: 0.2.1.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: lib/jvyaml-0.2.1.jar,
- .
+Bundle-ClassPath: lib/jvyaml-0.2.1.jar
 Export-Package: org.jvyaml,
  org.jvyaml.events,
  org.jvyaml.nodes,
  org.jvyaml.tokens,
  org.jvyaml.util
+Bundle-ActivationPolicy: lazy

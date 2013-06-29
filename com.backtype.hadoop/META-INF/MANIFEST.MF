@@ -1,13 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Hadoop
-Bundle-SymbolicName: com.backtype.hadoop
+Bundle-SymbolicName: com.backtype.hadoop;singleton:=true
 Bundle-Version: 1.1.1.qualifier
 Bundle-Vendor: BACKTYPE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.apache.hadoop;bundle-version="1.1.2",
- org.slf4j;bundle-version="1.2.14",
- org.apache.commons.logging;bundle-version="1.1.1",
+Require-Bundle: system.bundle,
+ org.apache.hadoop;bundle-version="1.1.2",
  org.jvyaml;bundle-version="0.2.1",
  org.junit4;bundle-version="4.4.0",
  com.google.guava;bundle-version="1.0.0"
@@ -16,3 +15,5 @@ Export-Package: com.backtype.hadoop,
  com.backtype.hadoop.formats,
  com.backtype.hadoop.pail,
  com.backtype.support
+Bundle-ActivationPolicy: lazy
+Import-Package: org.apache.log4j

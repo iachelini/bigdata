@@ -4,8 +4,7 @@ Bundle-Name: Apache Log4J
 Bundle-SymbolicName: org.apache.log4j;singleton:=true
 Bundle-Version: 1.2.14.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,
- lib/log4j-1.2.14.jar
+Bundle-ClassPath: lib/log4j-1.2.14.jar
 Bundle-Vendor: Apache
 Export-Package: org.apache.log4j,
  org.apache.log4j.chainsaw,
@@ -26,3 +25,4 @@ Export-Package: org.apache.log4j,
  org.apache.log4j.spi,
  org.apache.log4j.varia,
  org.apache.log4j.xml
+Bundle-ActivationPolicy: lazy

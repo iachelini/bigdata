@@ -4,8 +4,7 @@ Bundle-Name: Apache Commons Http
 Bundle-SymbolicName: org.apache.httpclient;singleton:=true
 Bundle-Version: 4.1.3.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,
- lib/httpclient-4.1.3.jar,
+Bundle-ClassPath: lib/httpclient-4.1.3.jar,
  lib/httpcore-4.1.3.jar
 Export-Package: org.apache.http,
  org.apache.http.annotation,
@@ -40,3 +39,4 @@ Export-Package: org.apache.http,
  org.apache.http.protocol,
  org.apache.http.util
 Bundle-Vendor: Apache
+Bundle-ActivationPolicy: lazy

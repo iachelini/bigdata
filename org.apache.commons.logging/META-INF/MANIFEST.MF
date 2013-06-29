@@ -4,8 +4,8 @@ Bundle-Name: Apache Commons Logging
 Bundle-SymbolicName: org.apache.commons.logging;singleton:=true
 Bundle-Version: 1.1.1.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,
- lib/commons-logging-1.1.1.jar
+Bundle-ClassPath: lib/commons-logging-1.1.1.jar
 Export-Package: org.apache.commons.logging,
  org.apache.commons.logging.impl
 Bundle-Vendor: Apache
+Bundle-ActivationPolicy: lazy

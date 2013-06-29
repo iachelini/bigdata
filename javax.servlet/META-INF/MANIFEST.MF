@@ -4,8 +4,8 @@ Bundle-Name: Javax Servlet
 Bundle-SymbolicName: javax.servlet;singleton:=true
 Bundle-Version: 2.5.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,
- lib/servlet-api-2.5.jar
+Bundle-ClassPath: lib/servlet-api-2.5.jar
 Bundle-Vendor: Sun/Oracle
 Export-Package: javax.servlet,
  javax.servlet.http
+Bundle-ActivationPolicy: lazy

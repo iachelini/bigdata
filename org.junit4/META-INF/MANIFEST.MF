@@ -4,8 +4,7 @@ Bundle-Name: JUnit4
 Bundle-SymbolicName: org.junit4;singleton:=true
 Bundle-Version: 4.4.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,
- lib/junit-4.4.jar
+Bundle-ClassPath: lib/junit-4.4.jar
 Bundle-Vendor: JUnit
 Export-Package: junit.extensions,
  junit.framework,
@@ -27,3 +26,4 @@ Export-Package: junit.extensions,
  org.junit.runner.manipulation,
  org.junit.runner.notification,
  org.junit.runners
+Bundle-ActivationPolicy: lazy
