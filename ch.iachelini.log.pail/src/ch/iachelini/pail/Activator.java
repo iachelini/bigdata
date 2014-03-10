@@ -8,7 +8,7 @@ import ch.iachelini.pail.internal.PailIO;
 public class Activator implements BundleActivator {
 
 	private static BundleContext context;
-	
+
 	public Activator() {
 	}
 
@@ -17,15 +17,12 @@ public class Activator implements BundleActivator {
 	}
 
 	public void start(BundleContext bundleContext) throws Exception {
-		
 		Activator.context = bundleContext;
-		
+
 		PailIO pailO = new PailIO();
-		
-		pailO.doPail();
+		pailO.writeLogins();
+		pailO.readLogins();
 	}
-	
-	
 
 	public void stop(BundleContext bundleContext) throws Exception {
 		Activator.context = null;
